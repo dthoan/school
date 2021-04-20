@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutChinh.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hải Viên</title>
+    <link rel="icon" href="~/img/logobb.jpg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="~/Content/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="~/Content/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="~/Content/themify-icons.css">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="~/Content/nice-select.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="~/Content/style.css">
+</head>
+
+<body>
+    <!-- popular cource part here-->
+    <section class="popular_cource section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+
+                    <div class="section_tittle text-center">
+                        <h2>Phụ huynh nói gì về Hải Viên</h2>
+                        <p>Bé nhà mình đang theo học lớp Chồi IEYC, mình rất hài lòng vì nhà trường có nhiều hoạt động thú vị cho các con, và đặc biệt là mình nhận thấy khả năng tiếng Anh của bé nhà mình phát triển vượt trội</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                @foreach (fifness.Models.KHACHHANG kh in fifness.Models.TrungGian.getDSkhachHang())
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_popular_cource">
+                            <img src="~/img/img_Content/@kh.HINH" alt="">
+                            <h3>Bé @kh.TENKH</h3>
+                            <p>@kh.NHANXET</p>
+                            <a href="#" class="btn_2">Tìm Hiểu Thêm    </a>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </section>
+    <!-- popular cource part end-->
+    <!-- shedule part here-->
+    <section class="shedule_part overflow-hidden">
+        <div class="container-fluid p-lg-0">
+            <div class="row align-items-center">
+                <div class="col-lg-5 d-md-none d-lg-block">
+                    <div class="shedule_img">
+                        <img src="~/img/byby2.jpeg" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="shedule_content">
+                        @*<h2>Đăng Kí Ngây Lịch Học</h2>
+                            <p>As you pour the first glass of your favorite Chianti or Chardonnay and settle
+                            <br> into an intimate Friday evening.</p>*@
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tên Khóa Học</th>
+                                    <th scope="col">Thứ Hai</th>
+                                    <th scope="col">Thứ Ba</th>
+                                    <th scope="col">Thứ Tư</th>
+                                    <th scope="col">Thứ Năm</th>
+                                    <th scope="col">Thứ Sáu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Fitness Aero</th>
+                                    <td>02.00</td>
+                                    <td>10.10</td>
+                                    <td>02.00</td>
+                                    <td>02.10</td>
+                                    <td>10.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fitness Aero</th>
+                                    <td>02.00</td>
+                                    <td>10.10</td>
+                                    <td>02.00</td>
+                                    <td>02.10</td>
+                                    <td>10.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fitness Aero</th>
+                                    <td>02.00</td>
+                                    <td>10.10</td>
+                                    <td>02.00</td>
+                                    <td>02.10</td>
+                                    <td>10.00</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shedule part end-->
+    <!-- our feature part start-->
+    <section class="our_feature section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle text-center">
+                        <h2>Tại Sao phải chọn chúng tôi</h2>
+                        <p>Fifness tạo ra một môi trường luyện tập đẳng cấp mà ở đó Hội viên luôn là trung tâm</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_1.png" alt="#">
+                        <h4>
+                            ĐA DẠNG BỘ MÔN
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_2.png" alt="#">
+                        <h4>HOÀN TOÀN CHỦ ĐỘNG</h4>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_3.png" alt="#">
+                        <h4>MỌI LÚC MỌI NƠI</h4>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_4.png" alt="#">
+                        <h4>ĐẶT LỊCH DỄ DÀNG</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our feature part end-->
+    <!-- about part here-->
+    <section class="about_part padding_bottom overflow-hidden">
+        <div class="container-fluid p-lg-0">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="about_text">
+                        <h2>ĐÔI NÉT VỀ TRƯỜNG MẦM NON HẢI VIÊN</h2>
+                        <p>
+                            Chương trình giáo dục mầm non Quốc tế IEYC của Fieldwork Education – một tổ chức giáo dục hàng đầu nước Anh. IEYC là chương trình học quốc tế mang tính đột phá dành cho trẻ từ 2 đến 5 tuổi, hướng đến khai thác tối đa năng lực của trẻ trong “giai đoạn vàng” của sự phát triển.
+
+                            Hiện tại, IEYC được áp dụng cho 140 trường mầm non ở 47 quốc gia trên thế giới như Anh, Thụy Điển, Nga….
+
+
+
+
+
+                        </p>
+
+                        <a href="#" class="btn_1">Tham Gia Cùng Chúng Tôi</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6">
+                    <div class="about_img">
+                        <img src="~/img/byby3.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about part end-->
+    <!-- our feature part start-->
+    <section class="client_review padding_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section_tittle text-center">
+                        <h2>Đội ngũ giảng viên của chúng tôi</h2>
+                        <p>As you pour the first glass of your favorite Chianti or Chardonnay and settle into an <br> intimate Friday evening.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client_review_iner owl-carousel">
+                        @foreach (fifness.Models.NHANVIEN nv in fifness.Models.TrungGian.getDSNhanVien())
+                        {
+                            <div class="client_review_single">
+                                <img src="~/img/img_Content/@nv.HINH" alt="">
+                                <h4>@nv.TENNV</h4>
+                                <span>Giáo Viên</span>
+                                <p>@nv.GIOITHIEU</p>
+                            </div>
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- become a member part end -->
+    <!-- our feature part end-->
+    <!-- jquery plugins here-->
+
+</body>
+
+</html>
+

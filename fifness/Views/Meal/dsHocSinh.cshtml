@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "dsHocSinh";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Phiếu Thu</h2>
+<table class="table pt-5">
+    <thead class="thead-dark pt-5">
+        <tr>
+            <th scope="col">Tên học Sinh</th>
+            <th scope="col">Tên Phụ Huynh</th>
+            <th scope="col">Lớp</th>
+            <th scope="col">Tiền ăn</th>
+            <th scope="col">Học Phí</th>
+            <th scope="col">Học Thêm</th>
+            <th scope="col">Tổng tiền</th>
+            <th scope="col">Phiếu Thu</th>
+        </tr>
+    </thead>
+    @foreach (fifness.Models.HOCSINH item in fifness.Models.TrungGian.getfullPhieuAn())
+    {
+        <tbody>
+            <tr>
+                <th scope="row">
+
+                    @Html.DisplayFor(modelItem => item.TENHS)
+                </th>
+                <td>  @Html.DisplayFor(modelItem => item.KHACHHANG.TENKH)</td>
+                <td>  @Html.DisplayFor(modelItem => item.LOP.TEN_LOP)</td>
+                <td>  @Html.DisplayFor(modelItem => item.TIEN_AN)</td>
+                <td>  @Html.DisplayFor(modelItem => item.HOC_PHI)</td>
+                <td>  @Html.DisplayFor(modelItem => item.HOC_THEM)</td>
+                
+                <td> @(item.HOC_PHI*2+item.TIEN_AN*2+item.HOC_THEM*2) </td>
+                <td>  @Html.ActionLink("Xem Phiếu Thu", "PhieuThu", new { id = item.MA_HS })   </td>
+
+            </tr>
+
+        </tbody>
+
+    }
+</table>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fifnessModelStoreContainer" CdmEntityContainer="fifnessEntities">
+    <EntitySetMapping Name="BAIVIETs">
+      <EntityTypeMapping TypeName="fifnessModel.BAIVIET">
+        <MappingFragment StoreEntitySet="BAIVIET">
+          <ScalarProperty Name="MABV" ColumnName="MABV" />
+          <ScalarProperty Name="TENBV" ColumnName="TENBV" />
+          <ScalarProperty Name="NOIDUNG" ColumnName="NOIDUNG" />
+          <ScalarProperty Name="HINH" ColumnName="HINH" />
+          <ScalarProperty Name="NGAYVIET" ColumnName="NGAYVIET" />
+          <ScalarProperty Name="MACD" ColumnName="MACD" />
+          <ScalarProperty Name="LANGUEGE" ColumnName="LANGUEGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BUAANs">
+      <EntityTypeMapping TypeName="fifnessModel.BUAAN">
+        <MappingFragment StoreEntitySet="BUAAN">
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="TEN_BUA" ColumnName="TEN_BUA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHUCVUs">
+      <EntityTypeMapping TypeName="fifnessModel.CHUCVU">
+        <MappingFragment StoreEntitySet="CHUCVU">
+          <ScalarProperty Name="MACV" ColumnName="MACV" />
+          <ScalarProperty Name="TENCV" ColumnName="TENCV" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHUDEs">
+      <EntityTypeMapping TypeName="fifnessModel.CHUDE">
+        <MappingFragment StoreEntitySet="CHUDE">
+          <ScalarProperty Name="MACD" ColumnName="MACD" />
+          <ScalarProperty Name="TENCD" ColumnName="TENCD" />
+          <ScalarProperty Name="MABV" ColumnName="MABV" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOCSINHs">
+      <EntityTypeMapping TypeName="fifnessModel.HOCSINH">
+        <MappingFragment StoreEntitySet="HOCSINH">
+          <ScalarProperty Name="MA_HS" ColumnName="MA_HS" />
+          <ScalarProperty Name="TENHS" ColumnName="TENHS" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="TIEN_AN" ColumnName="TIEN_AN" />
+          <ScalarProperty Name="HOC_PHI" ColumnName="HOC_PHI" />
+          <ScalarProperty Name="HOC_THEM" ColumnName="HOC_THEM" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="fifnessModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="NGAYSINH" ColumnName="NGAYSINH" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="MATV" ColumnName="MATV" />
+          <ScalarProperty Name="NHANXET" ColumnName="NHANXET" />
+          <ScalarProperty Name="HINH" ColumnName="HINH" />
+          <ScalarProperty Name="MAKHID" ColumnName="MAKHID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHUYENMAIs">
+      <EntityTypeMapping TypeName="fifnessModel.KHUYENMAI">
+        <MappingFragment StoreEntitySet="KHUYENMAI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TENKH" ColumnName="TENKH" />
+          <ScalarProperty Name="HINH" ColumnName="HINH" />
+          <ScalarProperty Name="NOIDUNG" ColumnName="NOIDUNG" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="GIAMGIA" ColumnName="GIAMGIA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LANGUEGEs">
+      <EntityTypeMapping TypeName="fifnessModel.LANGUEGE">
+        <MappingFragment StoreEntitySet="LANGUEGE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGINs">
+      <EntityTypeMapping TypeName="fifnessModel.LOGIN">
+        <MappingFragment StoreEntitySet="LOGIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOPs">
+      <EntityTypeMapping TypeName="fifnessModel.LOP">
+        <MappingFragment StoreEntitySet="LOP">
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="TEN_LOP" ColumnName="TEN_LOP" />
+          <ScalarProperty Name="SOLUONG" ColumnName="SOLUONG" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MONANs">
+      <EntityTypeMapping TypeName="fifnessModel.MONAN">
+        <MappingFragment StoreEntitySet="MONAN">
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="TEN_MON" ColumnName="TEN_MON" />
+          <ScalarProperty Name="ID_NHOM_THUC_AN" ColumnName="ID_NHOM_THUC_AN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHANVIENs">
+      <EntityTypeMapping TypeName="fifnessModel.NHANVIEN">
+        <MappingFragment StoreEntitySet="NHANVIEN">
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TENNV" ColumnName="TENNV" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="GIOITINH" ColumnName="GIOITINH" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="HINH" ColumnName="HINH" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+          <ScalarProperty Name="GIOITHIEU" ColumnName="GIOITHIEU" />
+          <ScalarProperty Name="MACV" ColumnName="MACV" />
+          <ScalarProperty Name="HINHmh" ColumnName="HINHmh" />
+          <ScalarProperty Name="LANGUEGE" ColumnName="LANGUEGE" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHOM_THUC_AN">
+      <EntityTypeMapping TypeName="fifnessModel.NHOM_THUC_AN">
+        <MappingFragment StoreEntitySet="NHOM_THUC_AN">
+          <ScalarProperty Name="ID_NHOM_THUC_AN" ColumnName="ID_NHOM_THUC_AN" />
+          <ScalarProperty Name="TEN_NHOM" ColumnName="TEN_NHOM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUANGCAOs">
+      <EntityTypeMapping TypeName="fifnessModel.QUANGCAO">
+        <MappingFragment StoreEntitySet="QUANGCAO">
+          <ScalarProperty Name="MAQC" ColumnName="MAQC" />
+          <ScalarProperty Name="BAIVIET" ColumnName="BAIVIET" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="fifnessModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THANHVIENs">
+      <EntityTypeMapping TypeName="fifnessModel.THANHVIEN">
+        <MappingFragment StoreEntitySet="THANHVIEN">
+          <ScalarProperty Name="MATV" ColumnName="MATV" />
+          <ScalarProperty Name="LOAITV" ColumnName="LOAITV" />
+          <ScalarProperty Name="MAKH" ColumnName="MAKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THUCDONTHEOTUANs">
+      <EntityTypeMapping TypeName="fifnessModel.THUCDONTHEOTUAN">
+        <MappingFragment StoreEntitySet="THUCDONTHEOTUAN">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERs">
+      <EntityTypeMapping TypeName="fifnessModel.USER">
+        <MappingFragment StoreEntitySet="USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="NHAPLAIPASSWORD" ColumnName="NHAPLAIPASSWORD" />
+          <ScalarProperty Name="HOTEN" ColumnName="HOTEN" />
+          <ScalarProperty Name="DIACHI" ColumnName="DIACHI" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="ThongBao" ColumnName="ThongBao" />
+          <ScalarProperty Name="MANV" ColumnName="MANV" />
+          <ScalarProperty Name="TRANGTHAI" ColumnName="TRANGTHAI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="proc_buasang" FunctionName="fifnessModel.Store.proc_buasang">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.proc_buasang_Result">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_dsMonAn" FunctionName="fifnessModel.Store.proc_dsMonAn">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.proc_dsMonAn_Result">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_hocsinh" FunctionName="fifnessModel.Store.proc_hocsinh">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.proc_hocsinh_Result">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_layMaLop" FunctionName="fifnessModel.Store.proc_layMaLop">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.proc_layMaLop_Result">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="proc_thucDonTheoTuan" FunctionName="fifnessModel.Store.proc_thucDonTheoTuan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.proc_thucDonTheoTuan_Result">
+          <ScalarProperty Name="ID_THUC_DON" ColumnName="ID_THUC_DON" />
+          <ScalarProperty Name="ID_BUA_AN" ColumnName="ID_BUA_AN" />
+          <ScalarProperty Name="ID_MON_AN" ColumnName="ID_MON_AN" />
+          <ScalarProperty Name="MA_LOP" ColumnName="MA_LOP" />
+          <ScalarProperty Name="NGAYNHAP" ColumnName="NGAYNHAP" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="fifnessModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="fifnessModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="fifnessModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="fifnessModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="fifnessModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="fifnessModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="fifnessModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="fifnessModel.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

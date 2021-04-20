@@ -1,0 +1,41 @@
+﻿@using fifness.Models;
+@{
+    ViewBag.Title = "dsGiaoVien";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<h2>DANH SÁCH GIÁO VIÊN</h2>
+
+<table style="width:100%" class="table table-bordered">
+    <tr>
+        <th>Họ Và Tên</th>
+        <th>Số Điện Thoại</th>
+        <th>Giới Tính </th>
+        <th>Địa Chỉ</th>
+        <th>Lớp</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.TENNV</td>
+            <td>@item.SDT</td>
+            <td>@item.GIOITINH</td>
+            <td>@item.DIACHI</td>
+            <td>
+                @item.MA_LOP
+                @Html.ActionLink("Xem Danh Sách Lớp", "dsHocSinhTheoGiaoVien", new { id = item.MA_LOP })
+
+            </td>
+
+        </tr>
+    }   
+    </table>
+
+
+

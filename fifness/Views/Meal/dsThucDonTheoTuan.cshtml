@@ -1,0 +1,39 @@
+﻿@model IEnumerable<fifness.Models.THUCDONTHEOTUAN>
+@{
+    ViewBag.Title = "dsThucDonTheoTuan";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<table class="table pt-5">
+    <h2>DANH SÁCH THỰC ĐƠN</h2>
+    <tr class="thead-dark pt-5">
+        <th>Mã Thực Đơn</th>
+        <th>Bữa Ăn</th>
+        <th>Món Ăn </th>
+        <th>Lớp</th>
+        <th>15/04/2021 - 22/04/2021</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <th>@item.ID_THUC_DON</th>
+            <th>@item.BUAAN.TEN_BUA</th>
+            <th>@item.MONAN.TEN_MON</th>
+            <th>@item.LOP.TEN_LOP</th>
+
+           
+        </tr>
+    }
+
+
+
+
+
+
+
+
+</table>

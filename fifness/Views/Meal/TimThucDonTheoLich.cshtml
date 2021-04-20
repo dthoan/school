@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "TimThucDonTheoLich";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>TimThucDonTheoLich</h2>
+<p>Date: <input type="text" id="datepicker"></p>
+
+<table class="table pt-5">
+    <thead class="thead-dark pt-5">
+        <tr>
+            <th scope="col">Bữa ăn</th>
+            <th scope="col">Món 1</th>
+            <th scope="col">Món 2</th>
+            <th scope="col">Món 3</th>
+            <th scope="col">Món 4</th>
+            <th scope="col">Món 5</th>
+        </tr>
+    </thead>
+    @*<tbody> @ViewBag.buasang.NGAYNHAP</tbody>*@
+    @*<tbody>
+        <tr>
+            <th scope="row">
+
+                BỮA SÁNG
+            </th>
+            @foreach (var item in ViewBag.buasang)
+            {
+
+                <td>@item.ID_MON_AN</td>
+
+            }
+
+        </tr>
+    
+
+
+
+
+
+    </tbody>*@
+
+
+</table>

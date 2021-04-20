@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MyDataSet" targetNamespace="http://tempuri.org/MyDataSet.xsd" xmlns:mstns="http://tempuri.org/MyDataSet.xsd" xmlns="http://tempuri.org/MyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="fifnessConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fifnessConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.fifnessConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="MyDataSet" msprop:Generator_UserDSName="MyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="THUCDONTHEOTUAN" msprop:Generator_TableClassName="THUCDONTHEOTUANDataTable" msprop:Generator_TableVarName="tableTHUCDONTHEOTUAN" msprop:Generator_TablePropName="THUCDONTHEOTUAN" msprop:Generator_RowDeletingName="THUCDONTHEOTUANRowDeleting" msprop:Generator_RowChangingName="THUCDONTHEOTUANRowChanging" msprop:Generator_RowEvHandlerName="THUCDONTHEOTUANRowChangeEventHandler" msprop:Generator_RowDeletedName="THUCDONTHEOTUANRowDeleted" msprop:Generator_UserTableName="THUCDONTHEOTUAN" msprop:Generator_RowChangedName="THUCDONTHEOTUANRowChanged" msprop:Generator_RowEvArgName="THUCDONTHEOTUANRowChangeEvent" msprop:Generator_RowClassName="THUCDONTHEOTUANRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_THUC_DON" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_THUC_DON" msprop:Generator_ColumnPropNameInRow="ID_THUC_DON" msprop:Generator_ColumnPropNameInTable="ID_THUC_DONColumn" msprop:Generator_UserColumnName="ID_THUC_DON" type="xs:int" />
+              <xs:element name="ID_BUA_AN" msprop:Generator_ColumnVarNameInTable="columnID_BUA_AN" msprop:Generator_ColumnPropNameInRow="ID_BUA_AN" msprop:Generator_ColumnPropNameInTable="ID_BUA_ANColumn" msprop:Generator_UserColumnName="ID_BUA_AN" type="xs:int" />
+              <xs:element name="ID_MON_AN" msprop:Generator_ColumnVarNameInTable="columnID_MON_AN" msprop:Generator_ColumnPropNameInRow="ID_MON_AN" msprop:Generator_ColumnPropNameInTable="ID_MON_ANColumn" msprop:Generator_UserColumnName="ID_MON_AN" type="xs:int" minOccurs="0" />
+              <xs:element name="MA_LOP" msprop:Generator_ColumnVarNameInTable="columnMA_LOP" msprop:Generator_ColumnPropNameInRow="MA_LOP" msprop:Generator_ColumnPropNameInTable="MA_LOPColumn" msprop:Generator_UserColumnName="MA_LOP" type="xs:int" minOccurs="0" />
+              <xs:element name="NGAYNHAP" msprop:Generator_ColumnVarNameInTable="columnNGAYNHAP" msprop:Generator_ColumnPropNameInRow="NGAYNHAP" msprop:Generator_ColumnPropNameInTable="NGAYNHAPColumn" msprop:Generator_UserColumnName="NGAYNHAP" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:THUCDONTHEOTUAN" />
+      <xs:field xpath="mstns:ID_THUC_DON" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

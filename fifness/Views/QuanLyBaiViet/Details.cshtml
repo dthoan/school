@@ -1,0 +1,49 @@
+﻿@model fifness.Models.BAIVIET
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+      
+
+        <dd>
+            @Html.DisplayFor(model => model.TENBV)
+        </dd>
+
+
+        <dd>
+            @Html.DisplayFor(model => model.NOIDUNG)
+        </dd>
+
+        
+
+        <dd>
+            <img src="~/img/img_Content/@Model.HINH"/>
+          
+        </dd>
+
+       
+
+        <dd>
+            @Html.DisplayFor(model => model.NGAYVIET)
+        </dd>
+
+       
+
+        <dd>
+            @Html.DisplayFor(model => model.CHUDE.TENCD)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MABV }) |
+    @Html.ActionLink("Xem Toàn Bộ Bài Viết", "Index")
+</p>

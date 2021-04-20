@@ -1,0 +1,74 @@
+﻿@model IEnumerable<fifness.Models.KHACHHANG>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2> @WebSecurity.CurrentUserName </h2>
+
+<p>
+    @Html.ActionLink("Thêm", "Create")
+</p>
+<table class="table">
+    <tr class="table thead-dark">
+        <th>
+           Tên
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGAYSINH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIACHI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GIOITINH)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.NHANXET)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HINH)
+        </th>
+        <th>
+            Action
+        </th>
+     
+       
+      
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TENKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NGAYSINH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIACHI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GIOITINH)
+        </td>
+       
+        <td style="display:inline-block;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 20ch;">
+           
+            @Html.DisplayFor(modelItem => item.NHANXET)
+        </td>
+        <td height="100px" width="100px">
+            <img src="~/img/img_Content/@item.HINH"  />
+        
+        </td>
+      
+        <td>
+            @Html.ActionLink("Chỉnh Sửa", "Edit", new { id=item.MAKH }) |
+            @Html.ActionLink("Chi Tiết", "Details", new { id=item.MAKH }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MAKH })
+        </td>
+    </tr>
+}
+
+</table>

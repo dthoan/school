@@ -1,0 +1,113 @@
+﻿
+
+@model IEnumerable<fifness.Models.BAIVIET>
+@{
+                /**/
+
+
+                ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+
+<h2>@Resoucre.Resource.Title</h2>
+
+<p>
+    <a href="~/QuanLyBaiViet/Create">@Resoucre.Resource.Add</a>
+</p>
+<table class="table " method="post">
+    <tr class="text-center thead-dark   ">
+
+        <th class="text-center ">
+            @Html.DisplayNameFor(model => model.TENBV)
+        </th>
+        <th class="text-center">
+            <span class="myclass" style="display:inline-block;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 13ch;">
+                @Html.DisplayNameFor(model => model.NOIDUNG)
+            </span>
+
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.HINH)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.NGAYVIET)
+        </th>
+
+        <th class="text-center">
+            <label>Action</label>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <span class="myclass" style="display:inline-block;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 13ch;">
+                    @Html.DisplayFor(modelItem => item.TENBV)
+                </span>
+
+            </td>
+            <td>
+                <span class="myclass" style="display:inline-block;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width: 30ch;">
+                    @Html.DisplayFor(modelItem => item.NOIDUNG)
+                </span>
+
+            </td>
+            <td>
+                <img src="~/img/img_Content/@item.HINH" style="height:60px; width:90px;" />
+              
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGAYVIET)
+
+            <td>
+                <div class="table-data-feature">
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" id="MABV" onclick="location.href='@Url.Action("Details", "QuanLyBaiViet", new { id = item.MABV })'">
+
+                        @Resoucre.Resource.Detail
+
+                    </button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Edit" id="MABV" onclick="location.href='@Url.Action("Edit", "QuanLyBaiViet", new { id = item.MABV })'">
+                        @Resoucre.Resource.Upate
+                    </button>
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Delete" id="MABV" onclick="location.href='@Url.Action("Delete", "QuanLyBaiViet", new { id = item.MABV })'">
+                        <p onclick="@Resoucre.Resource.ask">@Resoucre.Resource.Delete</p>
+
+                    </button>
+
+                </div>
+            </td>
+
+            @*@Html.ActionLink("Sửa", "Edit", new { id = item.MABV }) |
+                @Html.ActionLink("Chi Tiết", "Details", new { id = item.MABV }) |
+                @Html.ActionLink("Xóa", "Delete", new { id = item.MABV }, new { onclick = "return confirm('Are you sure?');" })*@
+
+        </tr>
+        @*@Html.PagedListPager(Model, page =>Url.Action("Index", new { page }))*@
+    }
+
+</table>
+
+
+<script>
+    function myFunction() {
+        var x = document.URL;
+        return x;
+    }
+    const urlString = myFunction();
+    const id = urlString.substr(-2, 2);
+    console.log(id.indexOf('/'));
+    if (id.indexOf('/') >= 0) {
+        document.getElementById('MABV').value = id.substr(1, 1);
+        // console.log(id.substr(1,1));
+    }
+    else {
+        document.getElementById('MABV').value = id
+        // console.log(id);
+    }
+
+      // console.log(urlString);
+</script>

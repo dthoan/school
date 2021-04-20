@@ -1,0 +1,38 @@
+﻿@model IEnumerable<fifness.Models.HOCSINH>
+@{
+    ViewBag.Title = "dsHocSinhTheoGiaoVien";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>DANH SÁCH HỌC SINH THEO LỚP</h2>
+
+
+<table style="width:100%" class="table table-bordered">
+    <tr>
+        <th>Họ Và Tên</th>
+        <th>Địa Chỉ</th>
+        <th>Giới Tính</th>
+        <th>Tiền Ăn </th>
+        <th>Tiền Học Phí</th>
+        <th>Tiền Học Thêm</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.TENHS</td>
+            <td></td>
+            <td></td>
+            <td>@item.TIEN_AN</td>
+            <td>@item.HOC_PHI</td>
+            <td>@item.HOC_THEM</td>
+
+
+        </tr>
+    }
+</table>
+
+
+
+

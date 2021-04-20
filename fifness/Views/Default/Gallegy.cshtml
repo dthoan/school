@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutChinh.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+<body>
+  
+    <!-- breadcrumb start-->
+    <!-- gallery part here -->
+    <section class="gallery_part section_padding">
+        <div class="container">
+           
+            <div class="row">
+                @foreach (fifness.Models.BAIVIET bv in fifness.Models.TrungGian.getDSBaiViet9())
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/Default/chiTietBaiViet/@bv.MABV" class="single_gallery_part">
+                            <img class="card-img rounded-0" src="~/img/img_Content/@bv.HINH" alt="">
+                        </a>
+                    </div>
+                }
+            </div>
+           
+
+
+        </div>
+    </section>
+    <!-- gallery part end -->
+
+    
+</body>
+
+</html>
+

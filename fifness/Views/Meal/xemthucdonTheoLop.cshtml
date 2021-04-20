@@ -1,0 +1,48 @@
+﻿@model IEnumerable<fifness.Models.THUCDONTHEOTUAN>
+@{
+    ViewBag.Title = "xemthucdonTheoLop";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>xemthucdonTheoLop</h2>
+
+<table class="table pt-5">
+    <thead class="thead-dark pt-5">
+        <tr>
+            <th scope="col">Lớp</th>
+            <th scope="col">Bữa Ăn</th>
+            <th scope="col">Món Ăn</th>
+            <th scope="col">Ngày thêm Thực Đơn</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+            <tr>
+                <th scope="row">
+
+                    @*@Html.DisplayFor(modelItem => item.MA_LOP)*@
+                </th>
+
+                @*<td>@ViewBag.bua</td>
+                    <td>@ViewBag.mon</td>
+                    <td>@ViewBag.bua</td>*@
+                @*<td>   @ViewBag.thucdontheolop.BUAAN.TEN_BUA</td>*@
+                @*<td>  @ViewBag.thucdontheolop.NGAYNHAP</td>*@
+                <td>  @Html.DisplayFor(modelItem => item.BUAAN.TEN_BUA)</td>
+
+
+
+                <td>  @Html.DisplayFor(modelItem => item.MONAN.TEN_MON)</td>
+
+                <td>  @Html.DisplayFor(modelItem => item.NGAYNHAP)</td>
+
+
+
+            </tr>
+            
+        </tbody>
+    }
+
+    </table>
+

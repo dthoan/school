@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutChinh.cshtml";
+}
+
+
+<!doctype html>
+<html lang="en">
+<body>
+  
+    <!-- popular cource start-->
+    <section class="popular_cource single_page_popular_cource padding_top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="section_tittle text-center">
+                        <h2>Những Điều Thú Vị</h2>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (fifness.Models.KHUYENMAI km in fifness.Models.TrungGian.getDSKhuyenMai())
+                {
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single_popular_cource">
+                            <img src="~/img/img_Content/@km.HINH" alt="">
+                            <h3>@km.TENKH <span>@km.GIAMGIA</span></h3>
+                            <p>@km.NOIDUNG</p>
+                            <div>
+                                <p style="color:red">Lấy Mã Khuyến Mãi</p>
+                                <a href="#" class="btn_2">@km.MAKH</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+               
+            </div>
+        </div>
+    </section>
+    <!-- popular cource end-->
+    <!-- our feature part start-->
+    <section class="our_feature section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle text-center">
+                        <h2>Tham gia cùng chúng tôi</h2>
+                        <p>
+                        Mọi đứa trẻ luôn luôn được hưởng những đặc quyền cao nhất
+                        .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_1.png" alt="#">
+                        <h4>
+                            ĐA DẠNG BỘ MÔN
+                        </h4>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_2.png" alt="#">
+                        <h4>HOÀN TOÀN CHỦ ĐỘNG</h4>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_3.png" alt="#">
+                        <h4>MỌI LÚC MỌI NƠI</h4>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_feature">
+                        <img src="~/img/icon/feature_icon_4.png" alt="#">
+                        <h4>ĐẶT LỊCH DỄ DÀNG</h4>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our feature part end-->
+   
+ 
+</body>
+
+</html>
+

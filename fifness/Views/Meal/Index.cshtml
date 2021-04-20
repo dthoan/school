@@ -1,0 +1,103 @@
+﻿@using fifness.Models;
+
+@{
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="col-lg-12 pt-5">
+        <div class="card">
+            <div class="card-header">
+                <strong>BỮA TRƯA</strong> CHO BÉ
+            </div>
+            <div class="card-body card-block">
+                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Chọn món cho bữa trưa</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Món 1</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownList("BUAAN", (IEnumerable<SelectListItem>)ViewBag.mon1, new { @class = "form-control-lg form-control" })
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Món 2</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownList("BUAAN", (IEnumerable<SelectListItem>)ViewBag.mon2, new { @class = "form-control-lg form-control" })
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Món 3</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownList("BUAAN", (IEnumerable<SelectListItem>)ViewBag.mon3, new { @class = "form-control-lg form-control" })
+                        </div>
+                    </div>
+
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Món 4</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownList("BUAAN", (IEnumerable<SelectListItem>)ViewBag.mon4, new { @class = "form-control-lg form-control" })
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="selectLg" class=" form-control-lg">Món 5</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownList("BUAAN", (IEnumerable<SelectListItem>)ViewBag.mon5, new { @class = "form-control-lg form-control" })
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="card-footer">
+                <button type="submit" value="" class="btn btn-primary btn-sm">
+                    <i class="fa fa-dot-circle-o"></i> Hoàn Tất
+                </button>
+                <button type="reset" class="btn btn-danger btn-sm">
+                    <i class="fa fa-ban"></i> Làm Lại
+                </button>
+                <a href="#">Gợi ý thực đơn</a>
+
+                <div>
+                    <a href="#" class="ex1">> Bữa Tối</a>
+                    <a href="#" class="ex1">> Bữa Sáng</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+        }
